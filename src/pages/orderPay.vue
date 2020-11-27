@@ -1,5 +1,5 @@
 <template>
-  
+  <div>OrderPay</div>
 </template>
 
 <script>

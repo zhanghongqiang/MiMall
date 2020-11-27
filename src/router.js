@@ -4,6 +4,11 @@ import Home from './pages/home';
 import Index from './pages/index';
 import Product from './pages/product';
 import Detail from './pages/detail';
+import Cart from './pages/cart';
+import Order from './pages/order';
+import OrderList from './pages/orderList';
+import OrderPay from './pages/orderPay';
+import OrderConfirm from './pages/orderConfirm';
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -19,14 +24,41 @@ export default new VueRouter({
           component: Index
         },
         {
-          path: '/product',
+          path: '/product/:id',
           name: 'product',
           component: Product
         },
         {
-          path: '/detail',
+          path: '/detail/:id',
           name: 'detail',
           component: Detail
+        }
+      ]
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: Cart
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: Order,
+      children:[
+        {
+          path: 'list',
+          name: 'order-list',
+          component: OrderList
+        },
+        {
+          path: 'confirm',
+          name: 'order-confirm',
+          component: OrderConfirm
+        },
+        {
+          path: 'pay',
+          name: 'order-pay',
+          component: OrderPay
         }
       ]
     }
