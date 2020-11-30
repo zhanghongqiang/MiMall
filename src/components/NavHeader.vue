@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import './../assets/sass/base';
   .header{
     .nav-topbar{
       height: 39px;
@@ -35,8 +36,6 @@ export default {
       background-color: #333;
       color: #b0b0b0;
       .container{
-        width: 1226px;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
