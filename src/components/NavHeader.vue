@@ -15,8 +15,18 @@
         </div>
       </div>
     </div>
-    <div class="nav_header">
+    <div class="nav-header">
+      <div class="container">
+        <div class="header-logo">
+          <a href="/#/index"></a>
+        </div>
+        <div class="header-menu">
 
+        </div>
+        <div class="header-search">
+
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -43,9 +53,9 @@ export default {
           display: inline-block;
           color:#b0b0b0;
           margin-right: 17px;
-        }
-        a:hover{
-          color: #fff;
+          &:hover{
+            color: #fff;
+          }
         }
         .my-cart{
           width: 110px;
@@ -59,6 +69,43 @@ export default {
             background: url('/img/icon-cart-checked.png') no-repeat center;
             background-size: contain;
             margin-right: 4px;
+          }
+        }
+      }
+    }
+    .nav-header{
+      .container{
+        .header-logo{
+          display: inline-block;
+          width: 55px;
+          height: 55px;
+          background-color: #f60;
+          a{
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            overflow: hidden;
+            &::before{
+              content: "";
+              display: inline-block;
+              width: 55px;
+              height: 55px;
+              background: url('/img/mi-logo.png') no-repeat center;
+              background-size: contain;
+              transition: margin .4s;
+            }
+            &::after{
+              content: "";
+              display: inline-block;
+              width: 55px;
+              height: 55px;
+              background: url('/img/mi-home.png') no-repeat center;
+              background-size: contain;
+            }
+            &:hover::before{
+              margin-left: -55px;
+              transition: margin .4s;
+            }
           }
         }
       }
