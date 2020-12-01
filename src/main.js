@@ -3,14 +3,14 @@ import App from './App.vue'
 import router from './router'
 import VueAxios from 'vue-axios'
 import axios  from 'axios'
-import env from './env'
+//import env from './env'
 Vue.use(VueAxios,axios)
 
 Vue.config.productionTip = false
 
 axios.defaults.baseURL = '/api'
 axios.defaults.timeout = 5000
-axios.defaults.baseURL = env.baseURL
+//axios.defaults.baseURL = env.baseURL
 
 axios.interceptors.response.use = function(response){
   let res = response.data
