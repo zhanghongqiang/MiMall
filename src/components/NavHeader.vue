@@ -72,9 +72,101 @@
           </div>
           <div class="item-menu">
               <span>Redmi红米</span>
+               <div class="children">
+                <ul>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-2.png" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-2.png" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-2.png" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-2.png" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-2.png" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-2.png" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
           </div>
           <div class="item-menu">
               <span>电视</span>
+               <div class="children">
+                <ul>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-3.jpg" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-3.jpg" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-3.jpg" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-3.jpg" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-3.jpg" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                  <li class="product">
+                    <a href="javascript:;" target="_blank">
+                      <div class="pro-img"><img src="/img/item-box-3.jpg" alt=""></div>
+                      <div class="pro-name">小米CC9</div>
+                      <div class="pro-price">1799元</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
           </div>
         </div>
         <div class="header-search">
