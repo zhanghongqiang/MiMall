@@ -301,6 +301,7 @@ export default {
               z-index: 1;
               overflow: hidden;
               transition: all .4s;
+              background-color: #fff;
               .product{
                 position: relative;
                 float: left;
