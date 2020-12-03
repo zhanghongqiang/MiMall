@@ -190,7 +190,7 @@ export default {
     }
   },
   mounted() {
-    this.getProductList()
+    //this.getProductList()
   },
   methods: {
     getProductList(){
@@ -298,7 +298,7 @@ export default {
               opacity: 0;
               width: 1226px;
               border: 1px solid #E5E5E5;
-              z-index: 1;
+              z-index: 9;
               overflow: hidden;
               transition: all .4s;
               background-color: #fff;
