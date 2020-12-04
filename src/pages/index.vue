@@ -99,8 +99,35 @@
           <img src="/img/banner-1.png" alt="">
         </a>
       </div>
-      <div class="product-box"></div>
-    </div> 
+      
+    </div>
+    <div class="product-box">
+        <div class="container">
+          <h2>手机</h2>
+          <div class="wrapper">
+            <div class="banner-left">
+              <a href="javascript:;">
+                <img src="/img/mix-alpha.jpg">
+              </a>
+            </div>
+            <div class="list-box">
+              <div class="list" v-for="(arr,i) in phoneList" :key="i">
+                <div class="item" v-for="(item,j) in arr" :key="j">
+                  <span :class="{'new-pro':j%2==0,'kill-pro':j%2==1} ">新品</span>
+                  <div class="item-img">
+                    <img src="/img/phone-box-1.webp" alt="">
+                  </div>
+                  <div class="item-info">
+                    <h3>小米10</h3>
+                    <p>骁龙855</p>
+                    <p class="price">1999元</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <service-bar></service-bar>
   </div>
 </template>
@@ -202,6 +229,14 @@ export default {
           id:34,
           img:'/img/ads/ads-4.jpg'
         }
+      ],
+      phoneList:[
+        [
+          1,1,1,1
+        ],
+        [
+          1,1,1,1
+        ]
       ]
     }
   }
@@ -210,6 +245,7 @@ export default {
 
 <style lang="scss">
 @import './../assets/sass/mixin';
+@import './../assets/sass/config';
   .index{
     .swiper-box{
       .nav-menu{
@@ -313,6 +349,87 @@ export default {
         img{
           width: 100%;
           height: 100%;
+        }
+      }
+    }
+    .product-box{
+      padding: 30px 0 50px;
+      background-color: $colorJ;
+      h2{
+        font-size: $fontF;
+        height: 21px;
+        line-height: 21px;
+        color: $colorB;
+        margin-bottom: 20px;
+      }
+      .wrapper{
+        display: flex;
+        .banner-left{
+          margin-right: 16px;
+          img{
+            width: 224px;
+            height: 619px;
+          }
+        }
+      }
+      .list-box{
+        .list{
+          @include flex();
+          width:986px;
+          margin-bottom: 14px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          .item{
+            width: 236px;
+            height: 302px;
+            background-color: $colorG;
+            text-align: center;
+            span{
+              display: inline-block;
+              width: 67px;
+              height: 24px;
+              line-height: 24px;
+              font-size: 14px;
+              color:$colorG;
+              &.new-pro{
+                background-color: #7ecf68;
+              }
+              &.kill-pro{
+                background-color: #e82626;
+              }
+            }
+            .item-img{
+              img{
+                height: 195px;
+              }
+            }
+            .item-info{
+              h3{
+                font-size: $fontJ;
+                line-height: $fontJ;
+                color:$colorB;
+                font-weight: bold;
+              }
+              p{
+                color: $colorD;
+                line-height: 13px;
+                margin: 6px auto 13px;
+              }
+              .price{
+                color:#f20a0a;
+                font-size: $fontJ;
+                font-weight: bold;
+                cursor: pointer;
+                &::after{
+                  content:'';
+                  vertical-align: middle;
+                  @include bgImg(22px,22px,'/img/icon-cart-hover.png');
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
         }
       }
     }
