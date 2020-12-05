@@ -12,7 +12,7 @@
                 <ul v-for="(item,index) in menuList" :key="index">
                   <li v-for="(sub,i) in item" :key="i">
                     <a href="javascript:;">
-                      <img :src="sub?sub.img:'/img/item-box-1.png'">
+                      <img v-lazy="sub?sub.img:'/img/item-box-1.png'">
                       {{sub? sub.name:"小米10"}}
                     </a>
                   </li>
@@ -91,12 +91,12 @@
       </div>
       <div class="ads-box">
         <a href="javascript:;" v-for="(item,index) in adsList" :key="index">
-          <img :src="item.img">
+          <img v-lazy="item.img">
         </a>
       </div>
       <div class="banner">
         <a href="javascript:;">
-          <img src="/img/banner-1.png" alt="">
+          <img v-lazy="'/img/banner-1.png'" alt="">
         </a>
       </div>
       
