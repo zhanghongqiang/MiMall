@@ -11,3 +11,21 @@
   background: url($img) no-repeat center;
   background-size: $size;
 }
+
+@mixin position($pos:absolute, $left:0,$top:0,$w:100%,$h:100%) {
+  position: $pos;
+  left:$left;
+  top:$top;
+  width: $w;
+  height: $h;
+}
+
+@mixin positionImg($pos:absolute, $right:0,$top:0,$w:100%,$h:100%,$img:'') {
+  position: $pos;
+  right:$right;
+  top:$top;
+  width: $w;
+  height: $h;
+  background: url($img) no-repeat center;
+  background-size: contain;
+}

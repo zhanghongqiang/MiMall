@@ -120,7 +120,7 @@
                   <div class="item-info">
                     <h3>小米10</h3>
                     <p>骁龙855</p>
-                    <p class="price">1999元</p>
+                    <p class="price" @click="addCart">1999元</p>
                   </div>
                 </div>
               </div>
@@ -129,6 +129,18 @@
         </div>
       </div>
     <service-bar></service-bar>
+    <modal 
+          title="提示" 
+          :showModal="showModal"
+          confirmText="加入购物车" 
+          btnType="1" 
+          modalType="middle"
+          @go-to-cart="goToCart"
+          @close-cart="showModal = false">
+          <template v-slot:body>
+            <p>添加商品成功！</p>
+          </template>
+    </modal>
   </div>
 </template>
 
@@ -140,14 +152,17 @@ const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass)
 SwiperClass.use([Pagination, Mousewheel, Autoplay,Navigation,EffectFade,EffectCoverflow,EffectCube])
 
 import ServiceBar from './../components/ServiceBar'
+import Modal from './../components/Modal'
 export default {
   name: 'index',
   components:{
     ServiceBar,
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    Modal
   },
   data() {
+    Modal
     return {
       swiperOptions:{
         loop:true,
@@ -237,9 +252,18 @@ export default {
         [
           1,1,1,1
         ]
-      ]
+      ],
+      showModal:false
     }
-  }
+  },
+  methods: {
+    addCart(){
+      this.showModal = true
+    },
+    goToCart(){
+      this.$router.push('/cart');
+    }
+  },
 }
 </script>
 
