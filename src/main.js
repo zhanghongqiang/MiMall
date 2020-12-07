@@ -5,6 +5,7 @@ import VueAxios from 'vue-axios'
 import axios  from 'axios'
 import VueLazyLoad from 'vue-lazyload'
 import VueCookie from 'vue-cookie'
+import store from './store'
 //import env from './env'
 Vue.use(VueAxios,axios)
 Vue.use(VueCookie)
@@ -33,6 +34,7 @@ axios.interceptors.response.use = function(response){
   }
 }
 new Vue({
+  store,
   router,
   render: h => h(App),
 }).$mount('#app')

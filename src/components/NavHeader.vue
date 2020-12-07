@@ -191,6 +191,9 @@ export default {
   },
   mounted() {
     //this.getProductList()
+    setTimeout(()=> {
+      
+    },2000)
   },
   methods: {
     getProductList(){
