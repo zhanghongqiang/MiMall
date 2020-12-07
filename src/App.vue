@@ -10,6 +10,14 @@
 
 export default {
   name: 'App',
+  methods: {
+    gerUser(){
+      this.axios.get('/user').then(() => {})
+    },
+    getCartCount(){
+      this.axios.get('/carts/products/sum').then(() => {})
+    }
+  },
 }
 </script>
 

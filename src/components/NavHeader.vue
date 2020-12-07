@@ -225,6 +225,9 @@ export default {
           &:hover{
             color: #fff;
           }
+          &:last-child{
+            margin-right: 0;
+          }
         }
         .my-cart{
           width: 110px;
