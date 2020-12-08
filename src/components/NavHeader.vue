@@ -189,6 +189,11 @@ export default {
       phoneList:[]
     }
   },
+  computed:{
+    getUserName(){
+      return this.$store.state.username;
+    }
+  },
   mounted() {
     //this.getProductList()
     setTimeout(()=> {

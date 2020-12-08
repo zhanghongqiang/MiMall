@@ -12,11 +12,15 @@ export default {
   name: 'App',
   methods: {
     gerUser(){
-      this.axios.get('/user').then(() => {})
+      this.axios.get('/user').then(res => {
+        this.$storestore.dispatch('saveUserName', res.username)
+      })
     },
     getCartCount(){
-      this.axios.get('/carts/products/sum').then(() => {})
-    }
+      this.axios.get('/carts/products/sum').then( res => {
+        this.$storestore.dispatch('saveCartCount', res)
+      })
+    } 
   },
 }
 </script>
