@@ -49,6 +49,7 @@ export default {
       top: 0;
       width: 100%;
       background-color: $colorG;
+      box-shadow: 0 5px 5px rgba(0,0,0, .07);
     }
     .container{
       @include flex();
