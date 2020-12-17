@@ -2,7 +2,7 @@
   <div class="product">
     <product-param>
       <template v-slot:buy>
-        <div class="btn">立即购买</div>
+        <div class="btn" @click="buy">立即购买</div>
       </template>
     </product-param>
     <div class="content">
@@ -85,7 +85,13 @@ export default {
     ProductParam,
     Swiper,
     SwiperSlide
-  }
+  },
+  methods: {
+    buy(){
+      let id = this.$route.params.id
+      this.$router.push(`/detail/${id}`);
+    }
+  },
 }
 </script>
 
