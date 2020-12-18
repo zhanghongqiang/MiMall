@@ -13,12 +13,12 @@ export default {
   methods: {
     gerUser(){
       this.axios.get('/user').then((res = {}) => {
-        this.$storestore.dispatch('saveUserName', res.username)
+        this.$store.dispatch('saveUserName', res.username)
       })
     },
     getCartCount(){
       this.axios.get('/carts/products/sum').then( (res = 0) => {
-        this.$storestore.dispatch('saveCartCount', res)
+        this.$store.dispatch('saveCartCount', res)
       })
     } 
   },

@@ -3,3 +3,17 @@
   width: 1226px;
   margin: 0 auto;
 }
+.clearfix::before,.clearfix::after{
+  content:'';
+  display: table;
+}
+
+.clearfix::after{
+  clear: both;
+}
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
