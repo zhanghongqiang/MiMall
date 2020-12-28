@@ -10,6 +10,7 @@ import OrderList from './pages/orderList';
 import OrderPay from './pages/orderPay';
 import OrderConfirm from './pages/orderConfirm';
 import Login from './pages/login';
+import AliPay from './pages/alipay';
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -65,6 +66,11 @@ export default new VueRouter({
           path: 'pay',
           name: 'order-pay',
           component: OrderPay
+        },
+        {
+          path:'alipay',
+          name: 'alipay',
+          component: AliPay
         }
       ]
     }

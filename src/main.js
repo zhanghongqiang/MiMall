@@ -19,7 +19,7 @@ axios.defaults.baseURL = '/api'
 axios.defaults.timeout = 5000
 //axios.defaults.baseURL = env.baseURL
 
-axios.interceptors.response.use = function(response){
+axios.interceptors.response.use(function(response){
   let res = response.data
   let path = location.hash
   if(res.status == 0){
@@ -33,7 +33,10 @@ axios.interceptors.response.use = function(response){
     alert(res.msg)
     return Promise.reject(res);
   }
-}
+},(error) => {
+  let res = error.response
+  Message.error(res.data.message)
+})
 new Vue({
   store,
   router,
