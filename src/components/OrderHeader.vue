@@ -18,7 +18,8 @@
 export default {
   name: 'order-header',
   props:{
-    title:String
+    title:String,
+    username:String
   }
 }
 </script>
